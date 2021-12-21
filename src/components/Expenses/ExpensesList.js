@@ -3,7 +3,7 @@ import ExpenseItem from './ExpenseItem';
 import './ExpensesList.css';
 
 function ExpensesList(props) {
-  const emptyExpensesContent = <p>Found no expenses.</p>;
+  const emptyExpensesContent = <p className="expenses-list__fallback">Found no expenses.</p>;
 
   if (props.items.length === 0) {
     return emptyExpensesContent;
